@@ -13,11 +13,12 @@ export const WEDDING = {
     { title: "Party", time: "20:00" },
   ],
   venue: {
-    name: "Railway Officers Club",
+    name: "Railway Officer's Club",
     address:
-      "814, Mettuguda, Lallaguda Railway Colony, Keshav Nagar Colony, Mettuguda, Secunderabad, Telangana 500017",
-    mapsQuery: "Railway Officers Club, Tarnaka Road, Secunderabad 500017",
-    mapsUrl: "https://maps.app.goo.gl/CrGN6NahyCFdYSym6?g_st=aw",
+      "Road Number 2, Purvotra Adhikari Awasiya Parisar, Krishna Nagar, Izzat Nagar, Bareilly, Uttar Pradesh 243122, India",
+    mapsQuery:
+      "Road Number 2, Purvotra Adhikari Awasiya Parisar, Krishna Nagar, Izzat Nagar, Bareilly, Uttar Pradesh 243122, India",
+    mapsUrl: "https://maps.app.goo.gl/7mAkKTk6ZDv2ZtAd6",
   },
   contact: {
     name: "Coordinator Name",
