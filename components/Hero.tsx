@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { WEDDING } from "@/lib/wedding";
 import PetalField from "./PetalField";
@@ -25,6 +26,21 @@ export default function Hero() {
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center gap-10">
         <div className="order-1 flex w-full flex-col items-center">
           <motion.div
+            initial={reduce ? { opacity: 0 } : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.05 }}
+            className="relative mb-5 h-20 w-20 overflow-hidden rounded-full border border-[#ffe3a3]/40 bg-[#4a0015]/20 shadow-[0_12px_30px_rgba(28,0,8,0.28)] md:h-24 md:w-24"
+          >
+            <Image
+              src="/images/Gold Mirror Acrylic Self Adhesive Ganesha Sticker - 14 inch.jpeg"
+              alt="Lord Ganesha"
+              fill
+              sizes="(max-width: 768px) 80px, 96px"
+              className="object-cover"
+            />
+          </motion.div>
+
+          <motion.div
             initial={reduce ? { opacity: 0 } : { opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.15 }}
@@ -32,7 +48,7 @@ export default function Hero() {
           >
             <div className="photo-shimmer relative">
               <PhotoCard
-                src="/images/couple-main.jpeg"
+                src="/images/ChatGPT Image May 20, 2026, 04_58_13 PM (2).png"
                 alt={`${WEDDING.groomName} and ${WEDDING.brideName}`}
                 className="hero-photo-main"
                 imageClassName="portrait-crop-center"
@@ -41,31 +57,33 @@ export default function Hero() {
               />
             </div>
 
-            <div className="pointer-events-none absolute inset-x-0 top-0 z-20 flex flex-col items-center px-8 pt-8 text-center md:px-10 md:pt-10">
-              <motion.p
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.9, delay: 0.2 }}
-                className="eyebrow text-[#f3dde3]"
-              >
-                Wedding Day
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.9, delay: 0.28 }}
-                className="mt-3 font-display text-lg tracking-[0.26em] text-cream/90 md:text-xl"
-              >
-                {WEDDING.dateDisplay}
-              </motion.p>
+            <div className="pointer-events-none absolute inset-0 z-20 flex flex-col items-center justify-between px-8 py-8 text-center md:px-10 md:py-10">
+              <div>
+                <motion.p
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.9, delay: 0.2 }}
+                  className="eyebrow font-semibold text-[#ffe3a3] drop-shadow-[0_2px_8px_rgba(42,0,12,0.9)]"
+                >
+                  Engagement Day 💎
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.9, delay: 0.28 }}
+                  className="mt-3 font-display text-lg tracking-[0.26em] text-[#fff4d3] drop-shadow-[0_2px_8px_rgba(42,0,12,0.9)] md:text-xl"
+                >
+                  {WEDDING.dateDisplay}
+                </motion.p>
+              </div>
               <motion.h1
                 initial={reduce ? { opacity: 0 } : { opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.15, delay: 0.35 }}
-                className="mt-20 font-script text-6xl leading-[0.88] text-cream drop-shadow-[0_8px_26px_rgba(24,0,8,0.6)] md:mt-24 md:text-8xl"
+                className="mb-20 font-script text-5xl leading-[0.88] text-[#ffe8b7] drop-shadow-[0_8px_22px_rgba(24,0,8,0.95)] md:mb-24 md:text-7xl xl:text-8xl"
               >
                 <span className="block">{WEDDING.groomName}</span>
-                <span className="my-2 block font-display text-xl tracking-[0.32em] text-[#f0d9c4] md:text-2xl">
+                <span className="my-2 block font-display text-xl tracking-[0.32em] text-[#ffffff] md:text-2xl">
                   &
                 </span>
                 <span className="block">{WEDDING.brideName}</span>

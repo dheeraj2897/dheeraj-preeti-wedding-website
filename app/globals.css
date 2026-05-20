@@ -250,22 +250,22 @@ body::before {
 
 @media (min-width: 768px) {
   .hero-photo-shell {
-    width: min(100%, 34rem);
+    width: min(100%, 31rem);
   }
 }
 
 @media (min-width: 1280px) {
   .hero-photo-shell {
-    width: min(100%, 44rem);
+    width: min(100%, 36rem);
   }
 }
 
 .hero-photo-main .photo-card__frame {
-  aspect-ratio: 4 / 5.45;
+  aspect-ratio: 2 / 3;
 }
 
 .hero-photo-main img {
-  transform: scale(1.03);
+  transform: scale(1.005);
   animation: soft-zoom 14s ease-in-out infinite;
 }
 
@@ -298,7 +298,7 @@ body::before {
 }
 
 .portrait-crop-center {
-  object-position: center 28%;
+  object-position: center bottom;
 }
 
 .groom-style-crop {
@@ -381,9 +381,9 @@ body::before {
 @keyframes soft-zoom {
   0%,
   100% {
-    transform: scale(1.03);
+    transform: scale(1.005);
   }
   50% {
-    transform: scale(1.08);
+    transform: scale(1.025);
   }
 }
