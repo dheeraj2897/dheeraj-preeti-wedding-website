@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BackgroundAudio from "@/components/BackgroundAudio";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -32,7 +33,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#6d001f] text-cream">{children}</body>
+      <body className="bg-[#6d001f] text-cream">
+        <BackgroundAudio />
+        {children}
+      </body>
     </html>
   );
 }
