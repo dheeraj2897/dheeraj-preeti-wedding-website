@@ -4,7 +4,7 @@ import PetalField from "./PetalField";
 export default function Letter() {
   return (
     <section className="section section-wine">
-      <PetalField count={8} className="opacity-40" />
+      <PetalField count={20} className="opacity-40" />
       <div className="container-tight text-center">
         <Reveal>
           <p className="eyebrow mb-6 text-[#d9b7c1]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>प्रिय मित्रों और परिवारजनों,</p>

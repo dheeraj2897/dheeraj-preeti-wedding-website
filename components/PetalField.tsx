@@ -16,8 +16,14 @@ export default function PetalField({
     const delay = -(index * 1.5);
     const size = 16 + (index % 4) * 5;
     const rotation = (index * 45) % 360;
-    // Alternate between ring, diamond, and sparkle
-    const type = index % 3 === 0 ? "ring" : index % 3 === 1 ? "diamond" : "sparkle";
+    
+    // Distribute as: 40% red-rose, 40% white-rose, 20% sparkle
+    const type = 
+      index % 5 === 0 || index % 5 === 2 
+        ? "red-rose" 
+        : index % 5 === 1 || index % 5 === 3 
+          ? "white-rose" 
+          : "sparkle";
 
     return {
       left,
@@ -35,7 +41,13 @@ export default function PetalField({
       {items.map((item, index) => (
         <span
           key={index}
-          className="petal"
+          className={
+            item.type === "red-rose"
+              ? "petal"
+              : item.type === "white-rose"
+                ? "petal petal-ivory"
+                : "petal" // fallback for sparkle so it animates
+          }
           style={{
             left: `${item.left}%`,
             width: `${item.size}px`,
@@ -44,101 +56,17 @@ export default function PetalField({
             animationDelay: `${item.delay}s`,
             opacity: item.opacity,
             display: "inline-block",
+            // For sparkles, override background and border-radius so they are pure gold stars
+            ...(item.type === "sparkle"
+              ? {
+                  background: "none",
+                  borderRadius: "0",
+                  boxShadow: "none",
+                }
+              : {}),
           }}
         >
-          {item.type === "ring" ? (
-            // Luxury Gold Ring SVG
-            <svg
-              viewBox="0 0 100 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ transform: `rotate(${item.rotation}deg)`, width: "100%", height: "100%" }}
-            >
-              {/* Diamond on top */}
-              <path
-                d="M50 15L35 30H65L50 15Z"
-                fill="url(#goldGrad)"
-                stroke="#ffe3a3"
-                strokeWidth="2"
-              />
-              <path
-                d="M50 15L43 30H57L50 15Z"
-                fill="#ffffff"
-                opacity="0.8"
-              />
-              {/* Ring Band */}
-              <circle
-                cx="50"
-                cy="55"
-                r="25"
-                stroke="url(#goldGrad)"
-                strokeWidth="6"
-              />
-              <circle
-                cx="50"
-                cy="55"
-                r="25"
-                stroke="#ffe3a3"
-                strokeWidth="1.5"
-                strokeDasharray="4 2"
-              />
-              <defs>
-                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#ffe3a3" />
-                  <stop offset="50%" stopColor="#d8b27a" />
-                  <stop offset="100%" stopColor="#a88548" />
-                </linearGradient>
-              </defs>
-            </svg>
-          ) : item.type === "diamond" ? (
-            // Sparkling Diamond SVG
-            <svg
-              viewBox="0 0 100 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              style={{ transform: `rotate(${item.rotation}deg)`, width: "100%", height: "100%" }}
-            >
-              <path
-                d="M50 10L80 35L50 90L20 35L50 10Z"
-                fill="url(#diaGrad)"
-                stroke="#ffffff"
-                strokeWidth="2"
-              />
-              <path
-                d="M50 10L35 35H65L50 10Z"
-                fill="#ffffff"
-                opacity="0.4"
-              />
-              <path
-                d="M35 35L20 35L50 90L35 35Z"
-                fill="#7dd3fc"
-                opacity="0.3"
-              />
-              <path
-                d="M65 35L80 35L50 90L65 35Z"
-                fill="#e0f2fe"
-                opacity="0.3"
-              />
-              <path
-                d="M50 10L20 35H35L50 10Z"
-                fill="#ffffff"
-                opacity="0.6"
-              />
-              <path
-                d="M50 10L80 35H65L50 10Z"
-                fill="#38bdf8"
-                opacity="0.3"
-              />
-              <defs>
-                <linearGradient id="diaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#ffffff" />
-                  <stop offset="30%" stopColor="#e0f2fe" />
-                  <stop offset="70%" stopColor="#bae6fd" />
-                  <stop offset="100%" stopColor="#38bdf8" />
-                </linearGradient>
-              </defs>
-            </svg>
-          ) : (
+          {item.type === "sparkle" && (
             // Sparkling Star SVG
             <svg
               viewBox="0 0 100 100"

@@ -19,6 +19,7 @@ interface BubbleItem {
   sizeClass: string;
   positionClass: string;
   animClass: string;
+  objectPosition?: string;
 }
 
 const BUBBLE_DATA: BubbleItem[] = [
@@ -32,7 +33,7 @@ const BUBBLE_DATA: BubbleItem[] = [
     caption: "Parents",
     description: "Groom's parents - Retd. Indian Air Force Warrior Shri Om Prakash Gupta & Smt. Bindu Gupta. Their blessings are our greatest strength.",
     sizeClass: "w-[65px] h-[65px] sm:w-[85px] sm:h-[85px] md:w-[110px] md:h-[110px] lg:w-[125px] lg:h-[125px]",
-    positionClass: "top-[24%] left-[12%] md:top-[28%] md:left-[16%] lg:top-[32%] lg:left-[18%]",
+    positionClass: "top-[6%] left-[8%] md:top-[8%] md:left-[10%] lg:top-[10%] lg:left-[12%]",
     animClass: "bubble-groom-2",
   },
   {
@@ -44,8 +45,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     caption: "Younger Brother Neeraj",
     description: "Groom's younger brother Neeraj, bringing joy, laughter, and lifelong support to Dheeraj's beautiful journey.",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[120px] md:h-[120px] lg:w-[135px] lg:h-[135px]",
-    positionClass: "top-[48%] left-[1%] md:top-[50%] md:left-[4%] lg:top-[52%] lg:left-[6%]",
+    positionClass: "top-[24%] left-[1%] md:top-[26%] md:left-[3%] lg:top-[28%] lg:left-[4%]",
     animClass: "bubble-groom-3",
+    objectPosition: "center 25%",
   },
   {
     id: 4,
@@ -56,20 +58,8 @@ const BUBBLE_DATA: BubbleItem[] = [
     caption: "Elder Sister",
     description: "Groom's elder sister Neelu, whose affection, guidance, and support are always with us.",
     sizeClass: "w-[60px] h-[60px] sm:w-[75px] sm:h-[75px] md:w-[95px] md:h-[95px] lg:w-[110px] lg:h-[110px]",
-    positionClass: "top-[68%] left-[12%] md:top-[70%] md:left-[16%] lg:top-[72%] lg:left-[18%]",
+    positionClass: "top-[42%] left-[8%] md:top-[44%] md:left-[10%] lg:top-[46%] lg:left-[12%]",
     animClass: "bubble-groom-4",
-  },
-  {
-    id: 5,
-    type: "groom",
-    src: "/images/bubble-gallery/uploaded-3.jpg",
-    fallback: "/images/bubble-gallery/uploaded-3.jpg",
-    label: "Reflective Moments",
-    caption: "Thoughtful & Calm",
-    description: "Seated gracefully in a classic indoor stairway, Dheeraj anticipates the joyous union and blessings of their wedding.",
-    sizeClass: "w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] md:w-[115px] md:h-[115px] lg:w-[130px] lg:h-[130px]",
-    positionClass: "top-[84%] left-[2%] md:top-[82%] md:left-[4%] lg:top-[82%] lg:left-[6%]",
-    animClass: "bubble-groom-5",
   },
 
   // Bride's bubbles (on the right side)
@@ -82,8 +72,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     caption: `${WEDDING.brideName}'s Radiant Grace`,
     description: "Dressed in a spectacular navy blue and pink lehenga with intricate golden embroidery, Preeti radiates pure elegance.",
     sizeClass: "w-[80px] h-[80px] sm:w-[105px] sm:h-[105px] md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px]",
-    positionClass: "top-[4%] right-[2%] md:top-[8%] md:right-[4%] lg:top-[12%] lg:right-[6%]",
+    positionClass: "top-[4%] right-[2%] md:top-[6%] md:right-[3%] lg:top-[8%] lg:right-[4%]",
     animClass: "bubble-bride-1",
+    objectPosition: "center 12%",
   },
   {
     id: 7,
@@ -91,23 +82,25 @@ const BUBBLE_DATA: BubbleItem[] = [
     src: "/images/bubble-gallery/uploaded-2.jpg",
     fallback: "/images/bubble-gallery/uploaded-2.jpg",
     label: "Sunny Charm",
-    caption: "Vibrant and Joyful",
-    description: "Smiling beautifully in a gorgeous pink saree against a modern backdrop, Preeti looks forward to their new life.",
+    caption: "Preeti in Pink Saree",
+    description: "Smiling gracefully in a gorgeous pink/red saree, Preeti radiates joy and elegance under the bright sun.",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[115px] md:h-[115px] lg:w-[130px] lg:h-[130px]",
-    positionClass: "top-[24%] right-[12%] md:top-[28%] md:right-[16%] lg:top-[32%] lg:right-[18%]",
+    positionClass: "top-[18%] right-[10%] md:top-[20%] md:right-[12%] lg:top-[22%] lg:right-[14%]",
     animClass: "bubble-bride-2",
+    objectPosition: "center 20%",
   },
   {
     id: 8,
     type: "bride",
-    src: "/images/couple-main.jpeg",
-    fallback: "/images/couple-main.jpeg",
-    label: "Love's Harmony",
-    caption: "Togetherness",
-    description: "Preeti and Dheeraj in a beautifully shared moment, anticipating the beautiful start of their lifetime bond.",
+    src: "/images/bubble-gallery/uploaded-3.jpg",
+    fallback: "/images/bubble-gallery/uploaded-3.jpg",
+    label: "Vibrant Grace",
+    caption: "Radiant Smile",
+    description: "A captivating portrait of Preeti in a vibrant red/pink saree, bringing warm smiles and auspicious beauty to our celebrations.",
     sizeClass: "w-[75px] h-[75px] sm:w-[95px] sm:h-[95px] md:w-[125px] md:h-[125px] lg:w-[145px] lg:h-[145px]",
-    positionClass: "top-[48%] right-[1%] md:top-[50%] md:right-[4%] lg:top-[52%] lg:right-[6%]",
+    positionClass: "top-[34%] right-[1%] md:top-[36%] md:right-[3%] lg:top-[38%] lg:right-[4%]",
     animClass: "bubble-bride-3",
+    objectPosition: "center 20%",
   },
   {
     id: 9,
@@ -118,20 +111,8 @@ const BUBBLE_DATA: BubbleItem[] = [
     caption: "Bride's Parents",
     description: "Bride's loving parents sharing a beautiful moment at the historic Ellora Caves. Their guidance and affection pave our way forward.",
     sizeClass: "w-[65px] h-[65px] sm:w-[80px] sm:h-[80px] md:w-[105px] md:h-[105px] lg:w-[120px] lg:h-[120px]",
-    positionClass: "top-[68%] right-[12%] md:top-[70%] md:right-[16%] lg:top-[72%] lg:right-[18%]",
+    positionClass: "top-[50%] right-[10%] md:top-[52%] md:right-[12%] lg:top-[54%] lg:right-[14%]",
     animClass: "bubble-bride-4",
-  },
-  {
-    id: 10,
-    type: "bride",
-    src: "/images/couple-main.jpeg",
-    fallback: "/images/couple-main.jpeg",
-    label: "Sweet Memories",
-    caption: "Cherished Moments",
-    description: "A heartwarming capture of love, surrounded by the warmth, support, and blessings of our dear family.",
-    sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[120px] md:h-[120px] lg:w-[135px] lg:h-[135px]",
-    positionClass: "top-[84%] right-[2%] md:top-[82%] md:right-[4%] lg:top-[82%] lg:right-[6%]",
-    animClass: "bubble-bride-5",
   },
 ];
 
@@ -146,7 +127,7 @@ export default function Hero() {
 
   return (
     <section className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden hero-bg px-4 pb-28 pt-10 md:px-6 md:pt-14">
-      <PetalField count={16} className="opacity-80 animate-soft-pulse" />
+      <PetalField count={36} className="opacity-80 animate-soft-pulse" />
 
       {/* Decorative Radial Gradients */}
       <div
@@ -185,6 +166,7 @@ export default function Hero() {
                     fill
                     sizes="(max-width: 768px) 100px, 160px"
                     className="object-cover transition-all duration-700 group-hover:rotate-2 group-hover:scale-110"
+                    style={{ objectPosition: bubble.objectPosition || "center" }}
                     onError={() => handleImageError(bubble.id)}
                   />
                 </div>
