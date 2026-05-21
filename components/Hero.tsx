@@ -258,7 +258,8 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, delay: 0.2 }}
-                  className="eyebrow font-semibold text-[#ffe3a3] drop-shadow-[0_2px_8px_rgba(42,0,12,0.9)]"
+                  className="eyebrow font-semibold text-[#ffe3a3]"
+                  style={{ textShadow: "0 2px 12px rgba(28, 0, 8, 0.95)" }}
                 >
                   Engagement Day 💎
                 </motion.p>
@@ -266,7 +267,8 @@ export default function Hero() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.9, delay: 0.28 }}
-                  className="mt-3 font-display text-lg tracking-[0.26em] text-[#fff4d3] drop-shadow-[0_2px_8px_rgba(42,0,12,0.9)] md:text-xl"
+                  className="mt-3 font-display text-lg tracking-[0.26em] text-[#fff4d3] md:text-xl"
+                  style={{ textShadow: "0 2px 12px rgba(28, 0, 8, 0.95)" }}
                 >
                   {WEDDING.dateDisplay}
                 </motion.p>
@@ -275,7 +277,8 @@ export default function Hero() {
                 initial={reduce ? { opacity: 0 } : { opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.15, delay: 0.35 }}
-                className="mb-20 font-script text-5xl leading-[0.88] text-[#ffe8b7] drop-shadow-[0_8px_22px_rgba(24,0,8,0.95)] md:mb-24 md:text-7xl xl:text-8xl"
+                className="mb-20 font-script text-5xl leading-[0.88] text-[#ffe8b7] md:mb-24 md:text-7xl xl:text-8xl"
+                style={{ textShadow: "0 4px 20px rgba(28, 0, 8, 0.98)" }}
               >
                 <span className="block">{WEDDING.groomName}</span>
                 <span className="my-2 block font-display text-xl tracking-[0.32em] text-[#ffffff] md:text-2xl">
