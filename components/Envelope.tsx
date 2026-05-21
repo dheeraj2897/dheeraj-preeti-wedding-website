@@ -153,21 +153,20 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
                   className="mx-auto mb-4"
                   style={{
                     width: "55%",
-                    height: "1px",
+                    height: "1.5px",
                     background:
-                      "linear-gradient(90deg, transparent, rgba(212,168,67,0.7), transparent)",
+                      "linear-gradient(90deg, transparent, rgba(138,102,45,0.45), transparent)",
                   }}
                 />
-                {/* Hindi text — gold on dark */}
+                {/* Hindi text — elegant auspicious Kumkum/Roli red */}
                 <p
                   style={{
                     fontFamily:
                       "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif",
                     fontSize: "clamp(1.5rem, 5.5vw, 2rem)",
                     fontWeight: 600,
-                    color: "#e8c96a",
-                    textShadow:
-                      "0 0 24px rgba(212,168,67,0.5), 0 2px 8px rgba(0,0,0,0.6)",
+                    color: "#c21820",
+                    textShadow: "0 1px 2px rgba(0,0,0,0.06)",
                     lineHeight: 1.4,
                     letterSpacing: "0.03em",
                   }}
@@ -179,24 +178,24 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
                   className="mx-auto mt-4 mb-3"
                   style={{
                     width: "55%",
-                    height: "1px",
+                    height: "1.5px",
                     background:
-                      "linear-gradient(90deg, transparent, rgba(212,168,67,0.7), transparent)",
+                      "linear-gradient(90deg, transparent, rgba(138,102,45,0.45), transparent)",
                   }}
                 />
-                {/* Click hint — soft gold */}
+                {/* Click hint — rich bronze/gold */}
                 <motion.p
-                  className="text-xs uppercase tracking-[0.22em] font-medium"
-                  style={{ color: "rgba(232,201,106,0.8)" }}
-                  animate={{ opacity: [0.5, 1, 0.5] }}
+                  className="text-xs uppercase tracking-[0.22em] font-semibold"
+                  style={{ color: "#8a662d" }}
+                  animate={{ opacity: [0.6, 1, 0.6] }}
                   transition={{ duration: 2.2, repeat: Infinity }}
                 >
                   ✦&nbsp; खोलने के लिए टैप करें &nbsp;✦
                 </motion.p>
                 <motion.p
-                  className="mt-1 text-[11px] uppercase tracking-[0.18em]"
-                  style={{ color: "rgba(232,201,106,0.55)" }}
-                  animate={{ opacity: [0.4, 0.85, 0.4] }}
+                  className="mt-1 text-[11px] uppercase tracking-[0.18em] font-medium"
+                  style={{ color: "rgba(138, 102, 45, 0.85)" }}
+                  animate={{ opacity: [0.5, 0.9, 0.5] }}
                   transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
                 >
                   Tap to Open
