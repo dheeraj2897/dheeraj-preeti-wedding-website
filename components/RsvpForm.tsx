@@ -99,20 +99,20 @@ export default function RsvpForm() {
       <fieldset>
         <legend className="field-label" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>क्या आप पधार रहे हैं?</legend>
         <div className="mt-2 space-y-3">
-          <label className="flex items-center gap-3 text-base text-ink">
+          <label className="flex items-center gap-3 text-base text-cream/90">
             <input
               type="radio"
               value="yes"
-          className="h-4 w-4 accent-cream"
+              className="h-4 w-4 accent-cream cursor-pointer"
               {...register("attending")}
             />
             <span style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>हाँ, मैं आऊंगा/आऊंगी</span>
           </label>
-          <label className="flex items-center gap-3 text-base text-ink">
+          <label className="flex items-center gap-3 text-base text-cream/90">
             <input
               type="radio"
               value="no"
-          className="h-4 w-4 accent-cream"
+              className="h-4 w-4 accent-cream cursor-pointer"
               {...register("attending")}
             />
             <span style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>क्षमा करें, मैं नहीं आ पाऊंगा/पाऊंगी</span>

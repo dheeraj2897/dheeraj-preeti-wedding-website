@@ -493,3 +493,16 @@ body::before {
 .envelope-flap-right {
   clip-path: polygon(100% 0, 100% 100%, 48% 50%);
 }
+
+/* Autofill styling overrides to ensure text is always visible and matches theme colors */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f7f3ec !important; /* text-cream */
+  -webkit-box-shadow: 0 0 0px 1000px #6d001f inset !important; /* wine red bg */
+  box-shadow: 0 0 0px 1000px #6d001f inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
