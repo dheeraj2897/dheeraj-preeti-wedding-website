@@ -26,11 +26,11 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 1,
     type: "groom",
-    src: "/images/bubble-gallery/groom-1.jpg",
+    src: "/images/bubble-gallery/groom-1.png",
     fallback: "/images/groom-style.jpeg",
-    label: "शैली और भव्यता",
-    caption: `शेरवानी में ${WEDDING.groomName}`,
-    description: "पारंपरिक क्रीम और सुनहरे परिधान में सजे, आगामी सुंदर जीवन यात्रा की तैयारी।",
+    label: "Style & Elegance",
+    caption: `${WEDDING.groomName} in Sherwani`,
+    description: "Adorned in a traditional cream and gold attire, preparing for the beautiful life journey ahead.",
     sizeClass: "w-[75px] h-[75px] sm:w-[100px] sm:h-[100px] md:w-[130px] md:h-[130px] lg:w-[150px] lg:h-[150px]",
     positionClass: "top-[4%] left-[2%] md:top-[8%] md:left-[4%] lg:top-[12%] lg:left-[6%]",
     animClass: "bubble-groom-1",
@@ -40,9 +40,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "groom",
     src: "/images/bubble-gallery/groom-parents.jpg",
     fallback: "/images/bubble-gallery/groom-parents.jpg",
-    label: "आशीर्वाद और स्नेह",
-    caption: "माता-पिता",
-    description: "वर के माता-पिता - पूर्व भारतीय वायु सेना योद्धा ओम प्रकाश गुप्ता जी एवं बिंदु गुप्ता जी। उनका आशीर्वाद हमारे जीवन का सबसे बड़ा संबल है।",
+    label: "Blessings & Love",
+    caption: "Parents",
+    description: "Groom's parents - Retd. Indian Air Force Warrior Shri Om Prakash Gupta & Smt. Bindu Gupta. Their blessings are our greatest strength.",
     sizeClass: "w-[65px] h-[65px] sm:w-[85px] sm:h-[85px] md:w-[110px] md:h-[110px] lg:w-[125px] lg:h-[125px]",
     positionClass: "top-[24%] left-[12%] md:top-[28%] md:left-[16%] lg:top-[32%] lg:left-[18%]",
     animClass: "bubble-groom-2",
@@ -50,11 +50,11 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 3,
     type: "groom",
-    src: "/images/bubble-gallery/groom-3.jpg",
-    fallback: "/images/groom-style.jpeg",
-    label: "सरल हृदय",
-    caption: "यात्रा का आरंभ",
-    description: "प्रेम, अटूट विश्वास और साझा खुशियों से भरे एक नए दाम्पत्य सफर की ओर बढ़ते कदम।",
+    src: "/images/bubble-gallery/uploaded-5.jpg",
+    fallback: "/images/bubble-gallery/uploaded-5.jpg",
+    label: "Modern Splendor",
+    caption: "A Grand Entrance",
+    description: "Standing before a stunning, lotus-like modern landmark, Dheeraj reflects on building a bright and beautiful future together.",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[120px] md:h-[120px] lg:w-[135px] lg:h-[135px]",
     positionClass: "top-[48%] left-[1%] md:top-[50%] md:left-[4%] lg:top-[52%] lg:left-[6%]",
     animClass: "bubble-groom-3",
@@ -64,9 +64,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "groom",
     src: "/images/bubble-gallery/groom-sister.jpg",
     fallback: "/images/bubble-gallery/groom-sister.jpg",
-    label: "प्रिय दीदी",
-    caption: "बड़ी बहन",
-    description: "वर की बड़ी बहन नीलू जी, जिनका स्नेह, मार्गदर्शन और सहारा हमेशा हमारे साथ रहता है।",
+    label: "Beloved Sister",
+    caption: "Elder Sister",
+    description: "Groom's elder sister Neelu, whose affection, guidance, and support are always with us.",
     sizeClass: "w-[60px] h-[60px] sm:w-[75px] sm:h-[75px] md:w-[95px] md:h-[95px] lg:w-[110px] lg:h-[110px]",
     positionClass: "top-[68%] left-[12%] md:top-[70%] md:left-[16%] lg:top-[72%] lg:left-[18%]",
     animClass: "bubble-groom-4",
@@ -74,11 +74,11 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 5,
     type: "groom",
-    src: "/images/bubble-gallery/groom-5.jpg",
-    fallback: "/images/groom-style.jpeg",
-    label: "सुनहरे सपने",
-    caption: "उत्सुक प्रतीक्षा",
-    description: "उस पावन क्षण की शांत और मधुर प्रतीक्षा, जब दो जीवन एक सुंदर डोर में बंध जाएंगे।",
+    src: "/images/bubble-gallery/uploaded-3.jpg",
+    fallback: "/images/bubble-gallery/uploaded-3.jpg",
+    label: "Reflective Moments",
+    caption: "Thoughtful & Calm",
+    description: "Seated gracefully in a classic indoor stairway, Dheeraj anticipates the joyous union and blessings of their wedding.",
     sizeClass: "w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] md:w-[115px] md:h-[115px] lg:w-[130px] lg:h-[130px]",
     positionClass: "top-[84%] left-[2%] md:top-[82%] md:left-[4%] lg:top-[82%] lg:left-[6%]",
     animClass: "bubble-groom-5",
@@ -88,11 +88,11 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 6,
     type: "bride",
-    src: "/images/bubble-gallery/bride-1.jpg",
-    fallback: "/images/couple-main.jpeg",
-    label: "सौम्यता और गरिमा",
-    caption: `${WEDDING.brideName} की अनुपम आभा`,
-    description: "सौंदर्य, शालीनता और जीवन के नए आरंभ का प्रतीक, पारंपरिक परिधान में सजी वधू।",
+    src: "/images/bubble-gallery/uploaded-1.jpg",
+    fallback: "/images/bubble-gallery/uploaded-1.jpg",
+    label: "Grace & Elegance",
+    caption: `${WEDDING.brideName}'s Radiant Grace`,
+    description: "Dressed in a spectacular navy blue and pink lehenga with intricate golden embroidery, Preeti radiates pure elegance.",
     sizeClass: "w-[80px] h-[80px] sm:w-[105px] sm:h-[105px] md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px]",
     positionClass: "top-[4%] right-[2%] md:top-[8%] md:right-[4%] lg:top-[12%] lg:right-[6%]",
     animClass: "bubble-bride-1",
@@ -100,11 +100,11 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 7,
     type: "bride",
-    src: "/images/bubble-gallery/bride-2.jpg",
-    fallback: "/images/couple-main.jpeg",
-    label: "वधू की चमक",
-    caption: "असीम प्रसन्नता",
-    description: "प्रेम से सराबोर एक कोमल हृदय, जो हमारे साझे सपनों को साकार करने के लिए उत्साहित है।",
+    src: "/images/bubble-gallery/uploaded-2.jpg",
+    fallback: "/images/bubble-gallery/uploaded-2.jpg",
+    label: "Sunny Charm",
+    caption: "Vibrant and Joyful",
+    description: "Smiling beautifully in a gorgeous pink saree against a modern backdrop, Preeti looks forward to their new life.",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[115px] md:h-[115px] lg:w-[130px] lg:h-[130px]",
     positionClass: "top-[24%] right-[12%] md:top-[28%] md:right-[16%] lg:top-[32%] lg:right-[18%]",
     animClass: "bubble-bride-2",
@@ -112,11 +112,11 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 8,
     type: "bride",
-    src: "/images/bubble-gallery/bride-3.jpg",
+    src: "/images/couple-main.jpeg",
     fallback: "/images/couple-main.jpeg",
-    label: "मनोरम श्रृंगार",
-    caption: "सघन मेहंदी",
-    description: "प्रेम के रंगों से सजी मेहंदी की सुंदर आकृतियां, जो जन्म-जन्मांतर के अटूट बंधन को दर्शाती हैं।",
+    label: "Love's Harmony",
+    caption: "Togetherness",
+    description: "Preeti and Dheeraj in a beautifully shared moment, anticipating the beautiful start of their lifetime bond.",
     sizeClass: "w-[75px] h-[75px] sm:w-[95px] sm:h-[95px] md:w-[125px] md:h-[125px] lg:w-[145px] lg:h-[145px]",
     positionClass: "top-[48%] right-[1%] md:top-[50%] md:right-[4%] lg:top-[52%] lg:right-[6%]",
     animClass: "bubble-bride-3",
@@ -124,11 +124,11 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 9,
     type: "bride",
-    src: "/images/bubble-gallery/bride-4.jpg",
-    fallback: "/images/couple-main.jpeg",
-    label: "मनमोहक छवि",
-    caption: "शाश्वत सौंदर्य",
-    description: "गरिमा और सौंदर्य की प्रतिमूर्ति, जीवन के एक अत्यंत खुशहाल अध्याय में प्रवेश करने को तैयार।",
+    src: "/images/bubble-gallery/uploaded-4.jpg",
+    fallback: "/images/bubble-gallery/uploaded-4.jpg",
+    label: "Warm Blessings",
+    caption: "Bride's Parents",
+    description: "Bride's loving parents sharing a beautiful moment at the historic Ellora Caves. Their guidance and affection pave our way forward.",
     sizeClass: "w-[65px] h-[65px] sm:w-[80px] sm:h-[80px] md:w-[105px] md:h-[105px] lg:w-[120px] lg:h-[120px]",
     positionClass: "top-[68%] right-[12%] md:top-[70%] md:right-[16%] lg:top-[72%] lg:right-[18%]",
     animClass: "bubble-bride-4",
@@ -136,11 +136,11 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 10,
     type: "bride",
-    src: "/images/bubble-gallery/bride-5.jpg",
+    src: "/images/couple-main.jpeg",
     fallback: "/images/couple-main.jpeg",
-    label: "मधुर स्मृतियां",
-    caption: "रस्मों की प्रतीक्षा",
-    description: "अपनों के स्नेह, असीम समर्थन और इस पावन उत्सव की सुंदर तैयारियों के बीच एक सुखद अहसास।",
+    label: "Sweet Memories",
+    caption: "Cherished Moments",
+    description: "A heartwarming capture of love, surrounded by the warmth, support, and blessings of our dear family.",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[120px] md:h-[120px] lg:w-[135px] lg:h-[135px]",
     positionClass: "top-[84%] right-[2%] md:top-[82%] md:right-[4%] lg:top-[82%] lg:right-[6%]",
     animClass: "bubble-bride-5",
@@ -207,8 +207,8 @@ export default function Hero() {
                 
                 {/* View indicator tag */}
                 <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span className="text-[10px] font-semibold uppercase tracking-widest2 text-[#ffe3a3]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
-                    देखें
+                  <span className="text-[10px] font-semibold uppercase tracking-widest2 text-[#ffe3a3]">
+                    View
                   </span>
                 </div>
               </div>
@@ -310,8 +310,8 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.95 }}
             className="mt-10 max-w-md text-center"
           >
-            <p className="font-display text-xl leading-relaxed text-cream/90 md:text-2xl" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
-              गुलाबों की महक, प्रियजनों के स्नेह और हमारे नए जीवन की सुंदर शुरुआत का एक आनंदमय उत्सव।
+            <p className="font-display text-xl leading-relaxed text-cream/90 md:text-2xl">
+              A blissful celebration of love, cherished blessings, and the beautiful beginning of our life together.
             </p>
           </motion.div>
         </div>
@@ -366,21 +366,21 @@ export default function Hero() {
                     </svg>
                   </button>
 
-                  <span className="eyebrow text-[#ffe3a3] mb-2" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>{selectedBubble.label}</span>
-                  <h3 className="font-display text-2xl tracking-wide text-white md:text-3xl lg:text-4xl" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+                  <span className="eyebrow text-[#ffe3a3] mb-2">{selectedBubble.label}</span>
+                  <h3 className="font-display text-2xl tracking-wide text-white md:text-3xl lg:text-4xl">
                     {selectedBubble.caption}
                   </h3>
                   
                   <div className="my-6 h-px w-16 bg-[#ffe3a3]/30" />
                   
-                  <p className="font-display text-base leading-relaxed text-cream/90 md:text-lg" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+                  <p className="font-display text-base leading-relaxed text-cream/90 md:text-lg">
                     {selectedBubble.description}
                   </p>
                   
                   <div className="mt-8 flex items-center gap-3">
                     <span className="h-2 w-2 rounded-full bg-[#ffe3a3]" />
-                    <span className="font-display text-xs uppercase tracking-widest2 text-[#ffe3a3]/80" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
-                      {selectedBubble.type === "groom" ? `वर का एलबम` : `वधू का एलबम`}
+                    <span className="font-display text-xs uppercase tracking-widest2 text-[#ffe3a3]/80">
+                      {selectedBubble.type === "groom" ? "Groom's Album" : "Bride's Album"}
                     </span>
                   </div>
                 </div>
