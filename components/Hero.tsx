@@ -145,8 +145,8 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 10,
     type: "bride",
-    src: "/images/bubble-gallery/bride-red-saree-final.png",
-    fallback: "/images/bubble-gallery/bride-red-saree-final.png",
+    src: "/images/bubble-gallery/bride-red-saree-final.jpg",
+    fallback: "/images/bubble-gallery/bride-red-saree-final.jpg",
     label: "Festive Elegance",
     caption: "Preeti in Red Saree",
     description: "Preeti looking absolutely stunning in a beautiful red saree adorned with gold border embroidery, capturing the auspicious spirit of our celebration.",
