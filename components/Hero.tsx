@@ -145,15 +145,15 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 10,
     type: "bride",
-    src: "/images/bubble-gallery/bride-mehndi.png",
-    fallback: "/images/bubble-gallery/bride-mehndi.png",
-    label: "Auspicious Mehndi",
-    caption: "Mehndi Designs",
-    description: "Preeti's hands adorned with intricate, dark crimson Mehndi patterns, symbolizing deep love, prosperity, and joy.",
+    src: "/images/bubble-gallery/bride-saree-red.png",
+    fallback: "/images/bubble-gallery/bride-saree-red.png",
+    label: "Festive Elegance",
+    caption: "Preeti in Red Saree",
+    description: "Preeti looking absolutely stunning in a beautiful red saree adorned with gold border embroidery, capturing the auspicious spirit of our celebration.",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[120px] md:h-[120px] lg:w-[135px] lg:h-[135px]",
     positionClass: "top-[62%] right-[2%] md:top-[64%] md:right-[4%] lg:top-[66%] lg:right-[5%]",
     animClass: "bubble-bride-5",
-    objectPosition: "center center",
+    objectPosition: "center 45%",
   },
 ];
 
