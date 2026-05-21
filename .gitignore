@@ -8,4 +8,6 @@ build
 .DS_Store
 prisma/dev.db
 prisma/dev.db-journal
-.vercel
+.agent
+openspec
+scratch_index.html
