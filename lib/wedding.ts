@@ -8,7 +8,7 @@ export const WEDDING = {
   rsvpDeadlineDisplay: "1 जून 2026",
   schedule: [
     { title: "सगाई समारोह", time: "16:00" },
-    { title: "कॉकटेल ऑवर", time: "17:00" },
+    { title: "पूजा", time: "17:00" },
     { title: "प्रीतिभोज", time: "19:00" },
     { title: "उत्सव एवं संगीत", time: "20:00" },
   ],
