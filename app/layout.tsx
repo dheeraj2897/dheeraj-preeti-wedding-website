@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "धीरज एवं प्रीति · २९ जून २०२६",
   description:
     "धीरज और प्रीति के सगाई समारोह में हमारे साथ सम्मिलित होकर उन्हें अपना आशीर्वाद दें।",
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     title: "धीरज एवं प्रीति · २९ जून २०२६",
     description:

@@ -3,7 +3,7 @@ export const WEDDING = {
   groomName: "Dheeraj",
   /** Wedding date — 29 June 2026, 16:00 local time */
   date: new Date("2026-06-29T16:00:00"),
-  dateDisplay: "29.06.26",
+  dateDisplay: "29 June 26",
   longDateDisplay: "29 जून 2026",
   rsvpDeadlineDisplay: "1 जून 2026",
   schedule: [

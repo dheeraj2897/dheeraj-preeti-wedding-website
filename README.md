@@ -5,7 +5,7 @@ Built with Next.js 14 (App Router), TypeScript, Tailwind, Framer Motion, Prisma 
 
 ## Sections
 
-1. **Hero** — Names, "Save the Date", date `29.06.26`
+1. **Hero** — Names, "Save the Date", date `29 June 26`
 2. **Letter** — Welcome message to friends and family
 3. **Countdown Timer** — Live countdown to the wedding
 4. **Schedule of Events** — Ceremony · Cocktail · Dinner · Party
