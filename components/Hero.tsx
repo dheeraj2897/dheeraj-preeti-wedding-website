@@ -321,8 +321,8 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.95 }}
             className="mt-10 max-w-md text-center"
           >
-            <p className="font-display text-xl leading-relaxed text-cream/90 md:text-2xl">
-              A blissful celebration of love, cherished blessings, and the beautiful beginning of our life together.
+            <p className="font-display text-xl leading-relaxed text-[#ffe3a3] md:text-2xl" style={{ textShadow: "0 2px 8px rgba(15, 0, 4, 0.6)" }}>
+              प्रेम का एक आनंदमय उत्सव, स्नेहपूर्ण आशीर्वाद, और हमारे नए जीवन की एक सुंदर शुरुआत।
             </p>
           </motion.div>
         </div>
