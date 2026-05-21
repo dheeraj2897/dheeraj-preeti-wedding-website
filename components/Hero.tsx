@@ -24,18 +24,6 @@ interface BubbleItem {
 const BUBBLE_DATA: BubbleItem[] = [
   // Groom's bubbles (on the left side)
   {
-    id: 1,
-    type: "groom",
-    src: "/images/bubble-gallery/groom-1.png",
-    fallback: "/images/groom-style.jpeg",
-    label: "Style & Elegance",
-    caption: `${WEDDING.groomName} in Sherwani`,
-    description: "Adorned in a traditional cream and gold attire, preparing for the beautiful life journey ahead.",
-    sizeClass: "w-[75px] h-[75px] sm:w-[100px] sm:h-[100px] md:w-[130px] md:h-[130px] lg:w-[150px] lg:h-[150px]",
-    positionClass: "top-[4%] left-[2%] md:top-[8%] md:left-[4%] lg:top-[12%] lg:left-[6%]",
-    animClass: "bubble-groom-1",
-  },
-  {
     id: 2,
     type: "groom",
     src: "/images/bubble-gallery/groom-parents.jpg",
