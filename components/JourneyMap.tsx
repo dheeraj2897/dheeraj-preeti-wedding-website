@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function JourneyMap() {
   // SVG coordinates for cities
@@ -103,9 +104,9 @@ export default function JourneyMap() {
               filter="url(#goldGlow)"
             />
 
-            {/* Trail 2: Bareilly -> Delhi */}
+            {/* Trail 2: Delhi -> Bareilly */}
             <path
-              d={`M ${BAREILLY.x} ${BAREILLY.y} Q ${(BAREILLY.x + DELHI.x) / 2} ${(BAREILLY.y + DELHI.y) / 2 - 10} ${DELHI.x} ${DELHI.y}`}
+              d={`M ${DELHI.x} ${DELHI.y} Q ${(DELHI.x + BAREILLY.x) / 2} ${(DELHI.y + BAREILLY.y) / 2 - 10} ${BAREILLY.x} ${BAREILLY.y}`}
               fill="none"
               stroke="url(#goldGradient)"
               strokeWidth="2"
@@ -138,7 +139,7 @@ export default function JourneyMap() {
               </text>
             </g>
 
-            {/* Hyderabad Node */}
+             {/* Hyderabad Node */}
             <g transform={`translate(${HYDERABAD.x}, ${HYDERABAD.y})`}>
               <circle r="14" fill="rgba(246, 211, 101, 0.15)" filter="url(#nodeGlow)" />
               <circle r="7" fill="url(#goldGradient)" />
@@ -146,6 +147,24 @@ export default function JourneyMap() {
               <text y="22" textAnchor="middle" fill="#fff" fontSize="10" fontWeight="bold" fontFamily="'Noto Serif Devanagari', 'Tiro Devanagari Hindi', sans-serif" style={{ filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.8))" }}>
                 हैदराबाद (Hyderabad)
               </text>
+            </g>
+
+            {/* The Animating Vintage Wedding Car */}
+            <g className="car-marker" filter="url(#goldGlow)">
+              <g transform="scale(0.8) translate(-4, -2)">
+                {/* Main vintage car body */}
+                <path
+                  d="M -10,3 L -10,0 Q -9,-1.5 -7,-1.5 L -5,-4.5 L 1,-4.5 L 4,0 L 11,0 L 11,3 Z"
+                  fill="url(#goldGradient)"
+                />
+                {/* Decorative wedding ribbons / flags on front */}
+                <path d="M 9,-1 L 11,-4 L 8,-3 Z" fill="#fff" opacity="0.8" />
+                {/* Wheels */}
+                <circle cx="-5" cy="3" r="2" fill="#1a0005" stroke="#fda085" strokeWidth="0.8" />
+                <circle cx="7" cy="3" r="2" fill="#1a0005" stroke="#fda085" strokeWidth="0.8" />
+                {/* Glowing headlight */}
+                <circle cx="11.5" cy="1" r="1" fill="#fff" filter="url(#nodeGlow)" />
+              </g>
             </g>
           </svg>
         </div>
@@ -155,8 +174,14 @@ export default function JourneyMap() {
           {/* Card 1: Hyderabad (Charminar) */}
           <Reveal delay={0.1}>
             <div className="group relative flex h-full flex-col items-center rounded-3xl border border-cream/10 bg-[#4a0015]/30 p-6 text-center shadow-lg transition-all duration-300 hover:border-cream/20 hover:bg-[#4a0015]/50">
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-cream/5 text-2xl text-gold shadow-inner border border-cream/10 group-hover:scale-110 transition-transform duration-300">
-                🕌
+              <div className="mb-4 flex h-14 w-14 overflow-hidden items-center justify-center rounded-full bg-cream/5 shadow-inner border border-cream/10 group-hover:scale-110 transition-transform duration-300">
+                <Image
+                  src="/images/journey-map/charminar.png"
+                  alt="Charminar"
+                  width={56}
+                  height={56}
+                  className="object-cover"
+                />
               </div>
               <p className="text-xs uppercase tracking-widest text-[#d9b7c1]" style={{ letterSpacing: "0.15em" }}>{HYDERABAD.role}</p>
               <h3 className="mt-2 text-xl font-semibold text-cream" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>{HYDERABAD.name}</h3>
@@ -174,8 +199,14 @@ export default function JourneyMap() {
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gold px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#4a0015] shadow-md">
                 कर्मक्षेत्र व मिलन भूमि
               </span>
-              <div className="mt-2 mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gold/10 text-2xl text-gold shadow-inner border border-gold/20 group-hover:scale-110 transition-transform duration-300">
-                🏛️
+              <div className="mt-2 mb-4 flex h-14 w-14 overflow-hidden items-center justify-center rounded-full bg-[#6d001f] shadow-inner border border-gold/40 group-hover:scale-110 transition-transform duration-300">
+                <Image
+                  src="/images/journey-map/india_gate.png"
+                  alt="India Gate"
+                  width={56}
+                  height={56}
+                  className="object-cover"
+                />
               </div>
               <p className="text-xs uppercase tracking-widest text-[#d9b7c1]" style={{ letterSpacing: "0.15em" }}>{DELHI.role}</p>
               <h3 className="mt-2 text-xl font-semibold text-cream" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>{DELHI.name}</h3>
@@ -189,8 +220,14 @@ export default function JourneyMap() {
           {/* Card 3: Bareilly (Jhumka Chowk) */}
           <Reveal delay={0.3}>
             <div className="group relative flex h-full flex-col items-center rounded-3xl border border-cream/10 bg-[#4a0015]/30 p-6 text-center shadow-lg transition-all duration-300 hover:border-cream/20 hover:bg-[#4a0015]/50">
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-cream/5 text-2xl text-gold shadow-inner border border-cream/10 group-hover:scale-110 transition-transform duration-300">
-                🔔
+              <div className="mb-4 flex h-14 w-14 overflow-hidden items-center justify-center rounded-full bg-cream/5 shadow-inner border border-cream/10 group-hover:scale-110 transition-transform duration-300">
+                <Image
+                  src="/images/journey-map/jhumka_chowk.png"
+                  alt="Jhumka Chowk"
+                  width={56}
+                  height={56}
+                  className="object-cover"
+                />
               </div>
               <p className="text-xs uppercase tracking-widest text-[#d9b7c1]" style={{ letterSpacing: "0.15em" }}>{BAREILLY.role}</p>
               <h3 className="mt-2 text-xl font-semibold text-cream" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>{BAREILLY.name}</h3>
@@ -207,6 +244,19 @@ export default function JourneyMap() {
         @keyframes dash {
           to {
             stroke-dashoffset: -20;
+          }
+        }
+        .car-marker {
+          offset-path: path("M 215 320 Q 195 240 200 160 Q 217.5 152.5 235 165");
+          offset-rotate: auto;
+          animation: move-car 10s linear infinite;
+        }
+        @keyframes move-car {
+          0% {
+            offset-distance: 0%;
+          }
+          100% {
+            offset-distance: 100%;
           }
         }
       `}</style>
