@@ -15,14 +15,14 @@ export default function LocationSection() {
     <section className="section section-ivory tear-wine torn-divider-top torn-divider-bottom">
       <div className="container-narrow text-center">
         <Reveal>
-          <p className="eyebrow text-[#8e5567]">Location</p>
+          <p className="eyebrow text-[#8e5567]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>समारोह स्थल</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="heading-md mt-4 text-[#4a0015]">{WEDDING.venue.name}</h2>
+          <h2 className="heading-md mt-4 text-[#4a0015]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>{WEDDING.venue.name}</h2>
         </Reveal>
         <Reveal delay={0.2}>
-          <p className="mt-6 text-sm text-[#6c4550] md:text-base">
-            <span className="font-medium text-[#4a0015]">Address:</span>{" "}
+          <p className="mt-6 text-sm text-[#6c4550] md:text-base" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+            <span className="font-medium text-[#4a0015]">पता:</span>{" "}
             {WEDDING.venue.address}
           </p>
         </Reveal>
@@ -45,8 +45,9 @@ export default function LocationSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline mt-10"
+            style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}
           >
-            Open in Maps
+            गूगल मैप्स पर देखें
           </a>
         </Reveal>
       </div>

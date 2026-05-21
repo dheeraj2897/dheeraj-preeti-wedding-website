@@ -35,20 +35,20 @@ export default function Countdown() {
   }, []);
 
   const cells: Array<{ label: string; value: number }> = [
-    { label: "Days", value: parts.days },
-    { label: "Hours", value: parts.hours },
-    { label: "Minutes", value: parts.minutes },
-    { label: "Seconds", value: parts.seconds },
+    { label: "दिन", value: parts.days },
+    { label: "घंटे", value: parts.hours },
+    { label: "मिनट", value: parts.minutes },
+    { label: "सेकंड", value: parts.seconds },
   ];
 
   return (
     <section className="section section-ivory tear-wine torn-divider-top torn-divider-bottom">
       <div className="container-narrow text-center">
         <Reveal>
-          <p className="eyebrow text-[#8e5567]">Countdown Timer</p>
+          <p className="eyebrow text-[#8e5567]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>शुभ घड़ी की प्रतीक्षा</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="heading-md mt-4 text-[#4a0015]">The Celebration Begins In</h2>
+          <h2 className="heading-md mt-4 text-[#4a0015]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>समारोह शुरू होने में शेष समय</h2>
         </Reveal>
 
         <Reveal delay={0.2}>
@@ -62,7 +62,7 @@ export default function Countdown() {
                   >
                     {mounted ? pad(c.value) : "00"}
                   </span>
-                  <span className="mt-3 text-[10px] uppercase tracking-widest2 text-[#8e5567] sm:text-xs">
+                  <span className="mt-3 text-[10px] uppercase tracking-widest2 text-[#8e5567] sm:text-xs" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
                     {c.label}
                   </span>
                 </div>

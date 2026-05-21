@@ -10,7 +10,7 @@ export default function Footer() {
       </div>
       <div className="container-narrow text-center">
         <Reveal>
-          <p className="eyebrow text-[#d9b7c1]">Hope to see you there!</p>
+          <p className="eyebrow text-[#d9b7c1]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>समारोह में आपकी प्रतीक्षा रहेगी!</p>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-10 font-script text-6xl text-cream md:text-8xl">

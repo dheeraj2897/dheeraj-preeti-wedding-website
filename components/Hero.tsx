@@ -28,9 +28,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "groom",
     src: "/images/bubble-gallery/groom-1.jpg",
     fallback: "/images/groom-style.jpeg",
-    label: "Style & Elegance",
-    caption: `${WEDDING.groomName} in Sherwani`,
-    description: "Preparing for the beautiful journey ahead, adorned in traditional cream and gold.",
+    label: "शैली और भव्यता",
+    caption: `शेरवानी में ${WEDDING.groomName}`,
+    description: "पारंपरिक क्रीम और सुनहरे परिधान में सजे, आगामी सुंदर जीवन यात्रा की तैयारी।",
     sizeClass: "w-[75px] h-[75px] sm:w-[100px] sm:h-[100px] md:w-[130px] md:h-[130px] lg:w-[150px] lg:h-[150px]",
     positionClass: "top-[4%] left-[2%] md:top-[8%] md:left-[4%] lg:top-[12%] lg:left-[6%]",
     animClass: "bubble-groom-1",
@@ -40,9 +40,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "groom",
     src: "/images/bubble-gallery/groom-2.jpg",
     fallback: "/images/groom-style.jpeg",
-    label: "Warm Smiles",
-    caption: `Happy Groom`,
-    description: "Every smile holds a dream of the upcoming celebration and our life together.",
+    label: "मधुर मुस्कान",
+    caption: "प्रसन्न वर",
+    description: "हर मुस्कान में इस सुंदर उत्सव और हमारे भावी जीवन का एक प्यारा सपना संजोए।",
     sizeClass: "w-[65px] h-[65px] sm:w-[85px] sm:h-[85px] md:w-[110px] md:h-[110px] lg:w-[125px] lg:h-[125px]",
     positionClass: "top-[24%] left-[12%] md:top-[28%] md:left-[16%] lg:top-[32%] lg:left-[18%]",
     animClass: "bubble-groom-2",
@@ -52,9 +52,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "groom",
     src: "/images/bubble-gallery/groom-3.jpg",
     fallback: "/images/groom-style.jpeg",
-    label: "Gentle Heart",
-    caption: "The Journey Begins",
-    description: "Stepping forward into a lifelong commitment full of love, trust, and shared laughter.",
+    label: "सरल हृदय",
+    caption: "यात्रा का आरंभ",
+    description: "प्रेम, अटूट विश्वास और साझा खुशियों से भरे एक नए दाम्पत्य सफर की ओर बढ़ते कदम।",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[120px] md:h-[120px] lg:w-[135px] lg:h-[135px]",
     positionClass: "top-[48%] left-[1%] md:top-[50%] md:left-[4%] lg:top-[52%] lg:left-[6%]",
     animClass: "bubble-groom-3",
@@ -64,9 +64,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "groom",
     src: "/images/bubble-gallery/groom-4.jpg",
     fallback: "/images/groom-style.jpeg",
-    label: "Classic Look",
-    caption: "Traditional Attire",
-    description: "Embracing the rich heritage and wedding customs with modern style and poise.",
+    label: "पारंपरिक आभा",
+    caption: "सुरुचिपूर्ण शैली",
+    description: "आधुनिक सुरुचि और भव्यता के साथ हमारी समृद्ध सांस्कृतिक परंपराओं को अपनाते हुए।",
     sizeClass: "w-[60px] h-[60px] sm:w-[75px] sm:h-[75px] md:w-[95px] md:h-[95px] lg:w-[110px] lg:h-[110px]",
     positionClass: "top-[68%] left-[12%] md:top-[70%] md:left-[16%] lg:top-[72%] lg:left-[18%]",
     animClass: "bubble-groom-4",
@@ -76,9 +76,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "groom",
     src: "/images/bubble-gallery/groom-5.jpg",
     fallback: "/images/groom-style.jpeg",
-    label: "Looking Forward",
-    caption: "Moments of Reflection",
-    description: "Quiet anticipation of the special day when two paths merge beautifully into one.",
+    label: "सुनहरे सपने",
+    caption: "उत्सुक प्रतीक्षा",
+    description: "उस पावन क्षण की शांत और मधुर प्रतीक्षा, जब दो जीवन एक सुंदर डोर में बंध जाएंगे।",
     sizeClass: "w-[70px] h-[70px] sm:w-[85px] sm:h-[85px] md:w-[115px] md:h-[115px] lg:w-[130px] lg:h-[130px]",
     positionClass: "top-[84%] left-[2%] md:top-[82%] md:left-[4%] lg:top-[82%] lg:left-[6%]",
     animClass: "bubble-groom-5",
@@ -90,9 +90,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "bride",
     src: "/images/bubble-gallery/bride-1.jpg",
     fallback: "/images/couple-main.jpeg",
-    label: "Grace & Poise",
-    caption: `${WEDDING.brideName}'s Radiance`,
-    description: "Adorned in classic bridal tones, representing elegance, beauty, and new beginnings.",
+    label: "सौम्यता और गरिमा",
+    caption: `${WEDDING.brideName} की अनुपम आभा`,
+    description: "सौंदर्य, शालीनता और जीवन के नए आरंभ का प्रतीक, पारंपरिक परिधान में सजी वधू।",
     sizeClass: "w-[80px] h-[80px] sm:w-[105px] sm:h-[105px] md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px]",
     positionClass: "top-[4%] right-[2%] md:top-[8%] md:right-[4%] lg:top-[12%] lg:right-[6%]",
     animClass: "bubble-bride-1",
@@ -102,9 +102,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "bride",
     src: "/images/bubble-gallery/bride-2.jpg",
     fallback: "/images/couple-main.jpeg",
-    label: "Bridal Glow",
-    caption: "Pure Joy",
-    description: "A heart filled with love, excited for the dreams we are building together.",
+    label: "वधू की चमक",
+    caption: "असीम प्रसन्नता",
+    description: "प्रेम से सराबोर एक कोमल हृदय, जो हमारे साझे सपनों को साकार करने के लिए उत्साहित है।",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[115px] md:h-[115px] lg:w-[130px] lg:h-[130px]",
     positionClass: "top-[24%] right-[12%] md:top-[28%] md:right-[16%] lg:top-[32%] lg:right-[18%]",
     animClass: "bubble-bride-2",
@@ -114,9 +114,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "bride",
     src: "/images/bubble-gallery/bride-3.jpg",
     fallback: "/images/couple-main.jpeg",
-    label: "Elegant Details",
-    caption: "Intricate Mehendi",
-    description: "Rich traditional patterns painted with love, celebrating bonds that will last forever.",
+    label: "मनोरम श्रृंगार",
+    caption: "सघन मेहंदी",
+    description: "प्रेम के रंगों से सजी मेहंदी की सुंदर आकृतियां, जो जन्म-जन्मांतर के अटूट बंधन को दर्शाती हैं।",
     sizeClass: "w-[75px] h-[75px] sm:w-[95px] sm:h-[95px] md:w-[125px] md:h-[125px] lg:w-[145px] lg:h-[145px]",
     positionClass: "top-[48%] right-[1%] md:top-[50%] md:right-[4%] lg:top-[52%] lg:right-[6%]",
     animClass: "bubble-bride-3",
@@ -126,9 +126,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "bride",
     src: "/images/bubble-gallery/bride-4.jpg",
     fallback: "/images/couple-main.jpeg",
-    label: "Stunning Portraits",
-    caption: "Timeless Beauty",
-    description: "A vision of grace, ready to step into a new chapter of happiness and togetherness.",
+    label: "मनमोहक छवि",
+    caption: "शाश्वत सौंदर्य",
+    description: "गरिमा और सौंदर्य की प्रतिमूर्ति, जीवन के एक अत्यंत खुशहाल अध्याय में प्रवेश करने को तैयार।",
     sizeClass: "w-[65px] h-[65px] sm:w-[80px] sm:h-[80px] md:w-[105px] md:h-[105px] lg:w-[120px] lg:h-[120px]",
     positionClass: "top-[68%] right-[12%] md:top-[70%] md:right-[16%] lg:top-[72%] lg:right-[18%]",
     animClass: "bubble-bride-4",
@@ -138,9 +138,9 @@ const BUBBLE_DATA: BubbleItem[] = [
     type: "bride",
     src: "/images/bubble-gallery/bride-5.jpg",
     fallback: "/images/couple-main.jpeg",
-    label: "Sweet Moments",
-    caption: "Waiting for the Vows",
-    description: "Surrounded by support, love, and anticipation of the beautiful celebration.",
+    label: "मधुर स्मृतियां",
+    caption: "रस्मों की प्रतीक्षा",
+    description: "अपनों के स्नेह, असीम समर्थन और इस पावन उत्सव की सुंदर तैयारियों के बीच एक सुखद अहसास।",
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[120px] md:h-[120px] lg:w-[135px] lg:h-[135px]",
     positionClass: "top-[84%] right-[2%] md:top-[82%] md:right-[4%] lg:top-[82%] lg:right-[6%]",
     animClass: "bubble-bride-5",
@@ -207,8 +207,8 @@ export default function Hero() {
                 
                 {/* View indicator tag */}
                 <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span className="text-[10px] font-semibold uppercase tracking-widest2 text-[#ffe3a3]">
-                    View
+                  <span className="text-[10px] font-semibold uppercase tracking-widest2 text-[#ffe3a3]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+                    देखें
                   </span>
                 </div>
               </div>
@@ -260,10 +260,11 @@ export default function Hero() {
                   transition={{ duration: 0.9, delay: 0.2 }}
                   className="eyebrow font-semibold text-[#ffe3a3]"
                   style={{
-                    textShadow: "0 1px 3px rgba(15, 0, 4, 0.95), 0 2px 8px rgba(15, 0, 4, 0.8), 0 4px 16px rgba(15, 0, 4, 0.5)"
+                    textShadow: "0 1px 3px rgba(15, 0, 4, 0.95), 0 2px 8px rgba(15, 0, 4, 0.8), 0 4px 16px rgba(15, 0, 4, 0.5)",
+                    fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif"
                   }}
                 >
-                  Engagement Day 💎
+                  सगाई समारोह 💎
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -310,9 +311,8 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.95 }}
             className="mt-10 max-w-md text-center"
           >
-            <p className="font-display text-xl leading-relaxed text-cream/90 md:text-2xl">
-              A joyful celebration wrapped in roses, family, and the beginning
-              of our life together.
+            <p className="font-display text-xl leading-relaxed text-cream/90 md:text-2xl" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+              गुलाबों की महक, प्रियजनों के स्नेह और हमारे नए जीवन की सुंदर शुरुआत का एक आनंदमय उत्सव।
             </p>
           </motion.div>
         </div>
@@ -367,21 +367,21 @@ export default function Hero() {
                     </svg>
                   </button>
 
-                  <span className="eyebrow text-[#ffe3a3] mb-2">{selectedBubble.label}</span>
-                  <h3 className="font-display text-2xl tracking-wide text-white md:text-3xl lg:text-4xl">
+                  <span className="eyebrow text-[#ffe3a3] mb-2" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>{selectedBubble.label}</span>
+                  <h3 className="font-display text-2xl tracking-wide text-white md:text-3xl lg:text-4xl" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
                     {selectedBubble.caption}
                   </h3>
                   
                   <div className="my-6 h-px w-16 bg-[#ffe3a3]/30" />
                   
-                  <p className="font-display text-base leading-relaxed text-cream/90 md:text-lg">
+                  <p className="font-display text-base leading-relaxed text-cream/90 md:text-lg" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
                     {selectedBubble.description}
                   </p>
                   
                   <div className="mt-8 flex items-center gap-3">
                     <span className="h-2 w-2 rounded-full bg-[#ffe3a3]" />
-                    <span className="font-display text-xs uppercase tracking-widest2 text-[#ffe3a3]/80">
-                      {selectedBubble.type === "groom" ? `Groom's Album` : `Bride's Album`}
+                    <span className="font-display text-xs uppercase tracking-widest2 text-[#ffe3a3]/80" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+                      {selectedBubble.type === "groom" ? `वर का एलबम` : `वधू का एलबम`}
                     </span>
                   </div>
                 </div>
@@ -400,8 +400,8 @@ export default function Hero() {
         aria-hidden
       >
         <div className="flex flex-col items-center gap-2">
-          <span className="text-[10px] uppercase tracking-widest2 text-cream/70">
-            Scroll
+          <span className="text-[10px] uppercase tracking-widest2 text-cream/70" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+            आगे बढ़ें
           </span>
           <div className="h-10 w-px animate-soft-pulse bg-cream/70" />
         </div>

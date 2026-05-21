@@ -4,13 +4,13 @@ export const WEDDING = {
   /** Wedding date — 29 June 2026, 16:00 local time */
   date: new Date("2026-06-29T16:00:00"),
   dateDisplay: "29.06.26",
-  longDateDisplay: "29 June 2026",
-  rsvpDeadlineDisplay: "1 June 2026",
+  longDateDisplay: "29 जून 2026",
+  rsvpDeadlineDisplay: "1 जून 2026",
   schedule: [
-    { title: "Wedding Ceremony", time: "16:00" },
-    { title: "Cocktail Hour", time: "17:00" },
-    { title: "Dinner", time: "19:00" },
-    { title: "Party", time: "20:00" },
+    { title: "सगाई समारोह", time: "16:00" },
+    { title: "कॉकटेल ऑवर", time: "17:00" },
+    { title: "प्रीतिभोज", time: "19:00" },
+    { title: "उत्सव एवं संगीत", time: "20:00" },
   ],
   venue: {
     name: "Railway Officer's Club",
@@ -21,7 +21,7 @@ export const WEDDING = {
     mapsUrl: "https://maps.app.goo.gl/7mAkKTk6ZDv2ZtAd6",
   },
   contact: {
-    name: "Coordinator Name",
+    name: "संयोजक",
     phone: "+91 00000 00000",
   },
 };

@@ -7,16 +7,15 @@ export default function RsvpSection() {
     <section id="rsvp" className="section section-wine">
       <div className="container-tight text-center">
         <Reveal>
-          <p className="eyebrow text-[#d9b7c1]">RSVP</p>
+          <p className="eyebrow text-[#d9b7c1]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>प्रतिउत्तर (RSVP)</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="heading-lg mt-4 text-cream">Confirm Your Attendance</h2>
+          <h2 className="heading-lg mt-4 text-cream" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>अपनी उपस्थिति सुनिश्चित करें</h2>
         </Reveal>
         <Reveal delay={0.2}>
-          <p className="mt-6 text-[#efd6dc] md:text-lg">
-            To help us prepare for a joyful celebration, kindly confirm your
-            attendance before{" "}
-            <span className="text-cream">{WEDDING.rsvpDeadlineDisplay}</span>.
+          <p className="mt-6 text-[#efd6dc] md:text-lg" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", lineHeight: "1.6" }}>
+            कृपया इस उत्सव की तैयारियों में हमारा सहयोग करने के लिए{" "}
+            <span className="text-cream">{WEDDING.rsvpDeadlineDisplay}</span> से पहले अपनी उपस्थिति की पुष्टि करें।
           </p>
         </Reveal>
         <Reveal delay={0.3}>

@@ -3,13 +3,13 @@ import BackgroundAudio from "@/components/BackgroundAudio";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dheeraj & Preethi · 29 June 2026",
+  title: "धीरज एवं प्रीति · २९ जून २०२६",
   description:
-    "Join us as we celebrate the wedding of Dheeraj and Preethi on 29 June 2026.",
+    "धीरज और प्रीति के सगाई समारोह में हमारे साथ सम्मिलित होकर उन्हें अपना आशीर्वाद दें।",
   openGraph: {
-    title: "Dheeraj & Preethi · 29 June 2026",
+    title: "धीरज एवं प्रीति · २९ जून २०२६",
     description:
-      "Join us as we celebrate the wedding of Dheeraj and Preethi on 29 June 2026.",
+      "धीरज और प्रीति के सगाई समारोह में हमारे साथ सम्मिलित होकर उन्हें अपना आशीर्वाद दें।",
     type: "website",
   },
 };
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="hi">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

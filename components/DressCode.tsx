@@ -6,15 +6,14 @@ export default function DressCode() {
     <section className="section section-wine tear-ivory torn-divider-bottom">
       <div className="container-narrow text-center">
         <Reveal>
-          <p className="eyebrow text-[#d9b7c1]">Dress Code</p>
+          <p className="eyebrow text-[#d9b7c1]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>परिधान संहिता (Dress Code)</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="heading-md mt-4 text-cream">Elegant Attire</h2>
+          <h2 className="heading-md mt-4 text-cream" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>भव्य परिधान</h2>
         </Reveal>
         <Reveal delay={0.2}>
-          <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-[#efd6dc] md:text-lg">
-            We kindly invite you to dress in elegant attire that reflects the
-            style and spirit of our special day.
+          <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-[#efd6dc] md:text-lg" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", lineHeight: "1.6" }}>
+            हम आपसे इस विशेष दिन की शोभा और शैली के अनुकूल सुंदर और भव्य परिधान धारण करने का सस्नेह आग्रह करते हैं।
           </p>
         </Reveal>
 
@@ -26,13 +25,12 @@ export default function DressCode() {
                 alt="Groom style inspiration"
                 className="dress-photo photo-float-slow mx-auto w-full max-w-[14rem] md:max-w-[15rem]"
                 imageClassName="groom-style-crop"
-                label="For Him"
-                caption="Refined Festive Layers"
+                label="पुरुषों के लिए"
+                caption="उत्कृष्ट पारंपरिक परिधान"
                 sizes="(max-width: 768px) 60vw, 240px"
               />
-              <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#efd6dc]">
-                Structured festive wear, polished textures, and clean footwear
-                create a sharp and celebratory look.
+              <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#efd6dc]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+                पारंपरिक शेरवानी, कुर्ता-पायजामा या उत्सव के अनुकूल सुरुचिपूर्ण वस्त्र।
               </p>
             </div>
           </Reveal>
@@ -44,13 +42,12 @@ export default function DressCode() {
                 alt="Bride style inspiration"
                 className="dress-photo photo-float-reverse mx-auto w-full max-w-[14rem] md:max-w-[15rem]"
                 imageClassName="portrait-crop-right"
-                label="For Her"
-                caption="Classic Red Bridal Grace"
+                label="महिलाओं के लिए"
+                caption="पारंपरिक लाल परिधान की शोभा"
                 sizes="(max-width: 768px) 60vw, 240px"
               />
-              <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#efd6dc]">
-                Rich color, graceful drape, and ornate detailing fit beautifully
-                with the warm romantic tone of the celebration.
+              <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#efd6dc]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+                सुरुचिपूर्ण पारंपरिक साड़ी, लहंगा या भव्य उत्सव परिधान।
               </p>
             </div>
           </Reveal>

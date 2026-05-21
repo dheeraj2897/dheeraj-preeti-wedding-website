@@ -6,10 +6,10 @@ export default function Schedule() {
     <section className="section section-wine tear-ivory torn-divider-bottom">
       <div className="container-narrow text-center">
         <Reveal>
-          <p className="eyebrow text-[#d9b7c1]">Schedule of Events</p>
+          <p className="eyebrow text-[#d9b7c1]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>कार्यक्रमों की रूपरेखा</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <h2 className="heading-md mt-4 text-cream">The Day at a Glance</h2>
+          <h2 className="heading-md mt-4 text-cream" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>दिन की एक झलक</h2>
         </Reveal>
         <Reveal delay={0.2}>
           <div className="divider mt-8 bg-cream/35" />

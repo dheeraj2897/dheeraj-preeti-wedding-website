@@ -8,10 +8,10 @@ import { z } from "zod";
 const schema = z.object({
   name: z
     .string()
-    .min(2, "Please enter your name")
-    .max(120, "Name is too long"),
+    .min(2, "कृपया अपना नाम लिखें")
+    .max(120, "नाम बहुत लंबा है"),
   attending: z.enum(["yes", "no"], {
-    required_error: "Please choose an option",
+    required_error: "कृपया एक विकल्प चुनें",
   }),
   intolerances: z.string().max(500).optional().or(z.literal("")),
   message: z.string().max(1000).optional().or(z.literal("")),
@@ -64,10 +64,10 @@ export default function RsvpForm() {
   if (status === "success") {
     return (
       <div className="rounded-[2rem] border border-cream/20 bg-white/5 px-8 py-16 text-center shadow-[0_24px_80px_rgba(20,0,6,0.22)] backdrop-blur-sm">
-        <p className="eyebrow text-[#d9b7c1]">Thank you</p>
-        <h3 className="heading-md mt-4 text-cream">Your RSVP has been received</h3>
-        <p className="mt-6 text-[#efd6dc]">
-          We can&apos;t wait to celebrate with you.
+        <p className="eyebrow text-[#d9b7c1]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>धन्यवाद</p>
+        <h3 className="heading-md mt-4 text-cream" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>आपका उत्तर (RSVP) प्राप्त हो गया है</h3>
+        <p className="mt-6 text-[#efd6dc]" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
+          हम आपके साथ इस उत्सव को मनाने के लिए उत्सुक हैं।
         </p>
       </div>
     );
@@ -80,14 +80,14 @@ export default function RsvpForm() {
       noValidate
     >
       <div>
-        <label htmlFor="name" className="field-label">
-          Your name
+        <label htmlFor="name" className="field-label" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>
+          आपका नाम
         </label>
         <input
           id="name"
           type="text"
           autoComplete="name"
-          placeholder="First and last name"
+          placeholder="पूरा नाम (प्रथम एवं अंतिम नाम)"
           className="field-input"
           {...register("name")}
         />
@@ -97,7 +97,7 @@ export default function RsvpForm() {
       </div>
 
       <fieldset>
-        <legend className="field-label">Will you come?</legend>
+        <legend className="field-label" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>क्या आप पधार रहे हैं?</legend>
         <div className="mt-2 space-y-3">
           <label className="flex items-center gap-3 text-base text-ink">
             <input
@@ -106,7 +106,7 @@ export default function RsvpForm() {
           className="h-4 w-4 accent-cream"
               {...register("attending")}
             />
-            <span>Yes, I will</span>
+            <span style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>हाँ, मैं आऊंगा/आऊंगी</span>
           </label>
           <label className="flex items-center gap-3 text-base text-ink">
             <input
@@ -115,7 +115,7 @@ export default function RsvpForm() {
           className="h-4 w-4 accent-cream"
               {...register("attending")}
             />
-            <span>Unfortunately, I can&apos;t</span>
+            <span style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>क्षमा करें, मैं नहीं आ पाऊंगा/पाऊंगी</span>
           </label>
         </div>
         {errors.attending && (
@@ -124,26 +124,26 @@ export default function RsvpForm() {
       </fieldset>
 
       <div>
-        <label htmlFor="intolerances" className="field-label">
-          Do you have any food intolerances?
+        <label htmlFor="intolerances" className="field-label" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>
+          क्या आपको भोजन से संबंधित कोई परहेज या एलर्जी है?
         </label>
         <input
           id="intolerances"
           type="text"
-          placeholder="Optional"
+          placeholder="वैकल्पिक (यदि कोई हो)"
           className="field-input"
           {...register("intolerances")}
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="field-label">
-          A note for the couple
+        <label htmlFor="message" className="field-label" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif", letterSpacing: "0.05em" }}>
+          भावी वर-वधू के लिए शुभकामना संदेश
         </label>
         <textarea
           id="message"
           rows={3}
-          placeholder="Optional"
+          placeholder="वैकल्पिक"
           className="field-input resize-none"
           {...register("message")}
         />
@@ -155,7 +155,7 @@ export default function RsvpForm() {
           disabled={status === "submitting"}
           className="btn-primary"
         >
-          {status === "submitting" ? "Sending..." : "Submit"}
+          {status === "submitting" ? "भेजा जा रहा है..." : "भेजें"}
         </button>
         {status === "error" && (
           <p className="text-xs text-red-700">{errorMsg}</p>
