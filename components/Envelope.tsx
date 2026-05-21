@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, useReducedMotion, AnimatePresence } from "framer-motion";
 
@@ -11,7 +11,6 @@ interface EnvelopeProps {
 export default function Envelope({ onOpen }: EnvelopeProps) {
   const [clicked, setClicked] = useState(false);
   const [done, setDone] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
   const reduceMotion = useReducedMotion();
 
   useEffect(() => {
@@ -21,7 +20,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
   const handleClick = () => {
     if (clicked) return;
     setClicked(true);
-    if (audioRef.current) audioRef.current.play().catch(() => {});
+    window.dispatchEvent(new CustomEvent("envelope-opened"));
     setTimeout(() => setDone(true), 1600);
     setTimeout(() => onOpen(), 2300);
   };
@@ -36,7 +35,6 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
       className="fixed inset-0 z-[999] flex"
       style={{ background: "hsl(345,80%,8%)" }}
     >
-      <audio ref={audioRef} src="/music/invitation.mp3" preload="auto" />
 
       {/* Ambient glow */}
       <div
