@@ -8,7 +8,7 @@ import Letter from "@/components/Letter";
 import Countdown from "@/components/Countdown";
 import Schedule from "@/components/Schedule";
 import LocationSection from "@/components/Location";
-import DressCode from "@/components/DressCode";
+import JourneyMap from "@/components/JourneyMap";
 import Details from "@/components/Details";
 import RsvpSection from "@/components/RsvpSection";
 import Footer from "@/components/Footer";
@@ -48,7 +48,7 @@ export default function HomePage() {
             <Countdown />
             <Schedule />
             <LocationSection />
-            <DressCode />
+            <JourneyMap />
             <Details />
             <RsvpSection />
             <Footer />
