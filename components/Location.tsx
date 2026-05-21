@@ -45,9 +45,8 @@ export default function LocationSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline mt-10"
-            style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}
           >
-            गूगल मैप्स पर देखें
+            View on Google Maps
           </a>
         </Reveal>
       </div>
