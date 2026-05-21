@@ -260,11 +260,10 @@ export default function Hero() {
                   transition={{ duration: 0.9, delay: 0.2 }}
                   className="eyebrow font-semibold text-[#ffe3a3]"
                   style={{
-                    textShadow: "0 1px 3px rgba(15, 0, 4, 0.95), 0 2px 8px rgba(15, 0, 4, 0.8), 0 4px 16px rgba(15, 0, 4, 0.5)",
-                    fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif"
+                    textShadow: "0 1px 3px rgba(15, 0, 4, 0.95), 0 2px 8px rgba(15, 0, 4, 0.8), 0 4px 16px rgba(15, 0, 4, 0.5)"
                   }}
                 >
-                  सगाई समारोह 💎
+                  Engagement Day 💎
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -400,8 +399,8 @@ export default function Hero() {
         aria-hidden
       >
         <div className="flex flex-col items-center gap-2">
-          <span className="text-[10px] uppercase tracking-widest2 text-cream/70" style={{ fontFamily: "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" }}>
-            आगे बढ़ें
+          <span className="text-[10px] uppercase tracking-widest2 text-cream/70">
+            Scroll
           </span>
           <div className="h-10 w-px animate-soft-pulse bg-cream/70" />
         </div>
