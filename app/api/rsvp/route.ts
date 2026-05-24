@@ -45,6 +45,24 @@ export async function POST(request: Request) {
       console.error("[rsvp] email failed:", err);
     });
 
+    const sheetsUrl = process.env.GOOGLE_SHEET_WEBAPP_URL;
+    if (sheetsUrl) {
+      fetch(sheetsUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          attending,
+          intolerances: intolerances ?? null,
+          message: message ?? null,
+        }),
+      }).catch((err) => {
+        console.error("[rsvp] google sheets sync failed:", err);
+      });
+    }
+
     return NextResponse.json({ ok: true, id: rsvp.id });
   } catch (err) {
     console.error("[rsvp] save failed:", err);
