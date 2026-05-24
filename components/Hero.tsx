@@ -116,7 +116,7 @@ const BUBBLE_DATA: BubbleItem[] = [
     sizeClass: "w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[115px] md:h-[115px] lg:w-[130px] lg:h-[130px]",
     positionClass: "top-[18%] right-[10%] md:top-[20%] md:right-[12%] lg:top-[22%] lg:right-[14%]",
     animClass: "bubble-bride-2",
-    objectPosition: "center 20%",
+    objectPosition: "center 5%",
   },
   {
     id: 8,

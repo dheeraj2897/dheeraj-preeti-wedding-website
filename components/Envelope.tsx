@@ -13,10 +13,6 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
   const [done, setDone] = useState(false);
   const reduceMotion = useReducedMotion();
 
-  useEffect(() => {
-    if (reduceMotion) onOpen();
-  }, [reduceMotion, onOpen]);
-
   const handleClick = () => {
     if (clicked) return;
     setClicked(true);
@@ -24,6 +20,21 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
     setTimeout(() => setDone(true), 1600);
     setTimeout(() => onOpen(), 2300);
   };
+
+  useEffect(() => {
+    if (reduceMotion) {
+      onOpen();
+      return;
+    }
+
+    if (clicked) return;
+
+    const timer = setTimeout(() => {
+      handleClick();
+    }, 30000); // Auto-open after 30 seconds
+
+    return () => clearTimeout(timer);
+  }, [reduceMotion, onOpen, clicked]);
 
   const ease = [0.4, 0, 0.2, 1] as const;
   const flap = (delay: number) => ({ duration: 0.65, delay, ease });
