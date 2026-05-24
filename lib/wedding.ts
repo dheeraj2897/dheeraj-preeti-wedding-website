@@ -5,7 +5,7 @@ export const WEDDING = {
   date: new Date("2026-06-29T16:00:00"),
   dateDisplay: "29 June 26",
   longDateDisplay: "29 जून 2026",
-  rsvpDeadlineDisplay: "1 जून 2026",
+  rsvpDeadlineDisplay: "21 जून 2026",
   schedule: [
     { title: "सगाई समारोह", time: "16:00" },
     { title: "पूजा", time: "17:00" },
