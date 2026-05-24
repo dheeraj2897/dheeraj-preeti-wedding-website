@@ -40,15 +40,15 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 2,
     type: "groom",
-    src: "/images/bubble-gallery/groom-parents.jpg",
-    fallback: "/images/bubble-gallery/groom-parents.jpg",
+    src: "/images/bubble-gallery/uploaded-4.jpg",
+    fallback: "/images/bubble-gallery/uploaded-4.jpg",
     label: "Blessings & Love",
-    caption: "Parents",
-    description: "Groom's parents - Retd. Indian Air Force Warrior Shri Om Prakash Gupta & Smt. Bindu Gupta. Their blessings are our greatest strength.",
+    caption: "Groom's Parents",
+    description: "Groom's parents - Retd. Indian Air Force Warrior Shri Om Prakash Gupta & Smt. Bindu Gupta sharing a beautiful moment at the historic Ellora Caves. Their blessings are our greatest strength.",
     sizeClass: "w-[65px] h-[65px] sm:w-[85px] sm:h-[85px] md:w-[110px] md:h-[110px] lg:w-[125px] lg:h-[125px]",
     positionClass: "top-[18%] left-[10%] md:top-[20%] md:left-[12%] lg:top-[22%] lg:left-[14%]",
     animClass: "bubble-groom-2",
-    objectPosition: "center 53%",
+    objectPosition: "center 28%",
   },
   {
     id: 3,
@@ -133,14 +133,15 @@ const BUBBLE_DATA: BubbleItem[] = [
   {
     id: 9,
     type: "bride",
-    src: "/images/bubble-gallery/uploaded-4.jpg",
-    fallback: "/images/bubble-gallery/uploaded-4.jpg",
+    src: "/images/bubble-gallery/bride-parents-final.jpg",
+    fallback: "/images/bubble-gallery/bride-parents-final.jpg",
     label: "Warm Blessings",
     caption: "Bride's Parents",
-    description: "Bride's loving parents sharing a beautiful moment at the historic Ellora Caves. Their guidance and affection pave our way forward.",
+    description: "Bride's loving parents. Their guidance and affection pave our way forward.",
     sizeClass: "w-[65px] h-[65px] sm:w-[80px] sm:h-[80px] md:w-[105px] md:h-[105px] lg:w-[120px] lg:h-[120px]",
     positionClass: "top-[48%] right-[10%] md:top-[50%] md:right-[12%] lg:top-[52%] lg:right-[14%]",
     animClass: "bubble-bride-4",
+    objectPosition: "center 20%",
   },
   {
     id: 10,
@@ -358,6 +359,7 @@ export default function Hero() {
                     fill
                     sizes="(max-width: 768px) 100vw, 500px"
                     className="object-cover"
+                    style={{ objectPosition: selectedBubble.objectPosition || "center" }}
                     priority
                   />
                   {/* Photo Gradient overlay */}
