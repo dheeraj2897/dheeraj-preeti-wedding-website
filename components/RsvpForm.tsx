@@ -29,8 +29,6 @@ const TRANSLATIONS = {
     labelAttending: "क्या आप पधार रहे हैं?",
     radioYes: "हाँ, मैं आऊंगा/आऊंगी",
     radioNo: "क्षमा करें, मैं नहीं आ पाऊंगा/पाऊंगी",
-    labelDiet: "क्या आपको भोजन से संबंधित कोई परहेज या एलर्जी है?",
-    placeholderDiet: "वैकल्पिक (यदि कोई हो)",
     labelMessage: "भावी वर-वधू के लिए शुभकामना संदेश",
     placeholderMessage: "वैकल्पिक",
     buttonSubmit: "भेजें",
@@ -45,8 +43,6 @@ const TRANSLATIONS = {
     labelAttending: "Are you attending?",
     radioYes: "Yes, I will attend",
     radioNo: "Sorry, I cannot attend",
-    labelDiet: "Do you have any dietary restrictions or allergies?",
-    placeholderDiet: "Optional (if any)",
     labelMessage: "Wishes / Message for the Couple",
     placeholderMessage: "Optional",
     buttonSubmit: "Submit",
@@ -83,7 +79,7 @@ export default function RsvpForm() {
         body: JSON.stringify({
           name: values.name.trim(),
           attending: values.attending === "yes",
-          intolerances: values.intolerances?.trim() || null,
+          intolerances: null,
           message: values.message?.trim() || null,
         }),
       });
@@ -211,18 +207,7 @@ export default function RsvpForm() {
         )}
       </fieldset>
 
-      <div>
-        <label htmlFor="intolerances" className="field-label" style={{ fontFamily: lang === "hi" ? "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" : "inherit", letterSpacing: "0.05em" }}>
-          {t.labelDiet}
-        </label>
-        <input
-          id="intolerances"
-          type="text"
-          placeholder={t.placeholderDiet}
-          className="field-input"
-          {...register("intolerances")}
-        />
-      </div>
+
 
       <div>
         <label htmlFor="message" className="field-label" style={{ fontFamily: lang === "hi" ? "'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif" : "inherit", letterSpacing: "0.05em" }}>

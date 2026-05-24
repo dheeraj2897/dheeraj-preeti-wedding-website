@@ -31,44 +31,51 @@ export async function POST(request: Request) {
 
   const { name, attending, intolerances, message } = parsed.data;
 
-  try {
-    const rsvp = await prisma.rsvp.create({
-      data: {
-        name,
-        attending,
-        intolerances: intolerances ?? null,
-        message: message ?? null,
-      },
-    });
+  let rsvpId = "temp-id-" + Date.now();
+  let dbSaved = false;
 
-    sendRsvpEmail({ name, attending, intolerances, message }).catch((err) => {
-      console.error("[rsvp] email failed:", err);
-    });
-
-    const sheetsUrl = process.env.GOOGLE_SHEET_WEBAPP_URL;
-    if (sheetsUrl) {
-      fetch(sheetsUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+  const dbUrl = process.env.DATABASE_URL;
+  if (dbUrl && !dbUrl.includes("USER:PASSWORD")) {
+    try {
+      const rsvp = await prisma.rsvp.create({
+        data: {
           name,
           attending,
           intolerances: intolerances ?? null,
           message: message ?? null,
-        }),
-      }).catch((err) => {
-        console.error("[rsvp] google sheets sync failed:", err);
+        },
       });
+      rsvpId = rsvp.id;
+      dbSaved = true;
+    } catch (dbErr) {
+      console.warn("[rsvp] database save failed, continuing with email and sheet sync:", dbErr);
     }
-
-    return NextResponse.json({ ok: true, id: rsvp.id });
-  } catch (err) {
-    console.error("[rsvp] save failed:", err);
-    return NextResponse.json(
-      { error: "Could not save RSVP" },
-      { status: 500 },
-    );
+  } else {
+    console.log("[rsvp] database URL not configured, skipping DB write.");
   }
+
+  // Always send email and push to Google Sheet!
+  sendRsvpEmail({ name, attending, intolerances, message }).catch((err) => {
+    console.error("[rsvp] email failed:", err);
+  });
+
+  const sheetsUrl = process.env.GOOGLE_SHEET_WEBAPP_URL;
+  if (sheetsUrl) {
+    fetch(sheetsUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        attending,
+        intolerances: intolerances ?? null,
+        message: message ?? null,
+      }),
+    }).catch((err) => {
+      console.error("[rsvp] google sheets sync failed:", err);
+    });
+  }
+
+  return NextResponse.json({ ok: true, id: rsvpId, dbSaved });
 }
